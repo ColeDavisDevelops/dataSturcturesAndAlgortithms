@@ -1,8 +1,8 @@
 def reverse_str(str):
-    for i in range(len(str)-1, -1, -1):
-        yield str[i] 
+    helper(s, l, r)
 
-for char in reverse_str("hello"):
-    print(char)
+def helper(s, l, r):
+    if idx >= len(s) or 
+
 
 # comment pandas
