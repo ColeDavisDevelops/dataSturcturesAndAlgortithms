@@ -8,8 +8,8 @@ class Solution:
         if l == 0 or l == 1:
             return True
         
-        left = 0;
-        right = 0;
+        left = 0
+        right = 0
         
         if l % 2 == 0:
             left = int(l / 2 - 1)
