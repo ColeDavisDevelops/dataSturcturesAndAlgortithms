@@ -1,0 +1,3 @@
+const capitalize = (wordArr) => {
+
+}
