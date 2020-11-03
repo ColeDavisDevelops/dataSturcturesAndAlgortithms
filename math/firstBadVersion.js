@@ -18,9 +18,20 @@ var solution = function (isBadVersion) {
    * @return {integer} The first bad version
    */
   return function (n) {
-    for (let i = 1; i <= n; i++) {
-      if (isBadVersion(i)) {
-        return i;
+    let mid = Math.floor(n / 2);
+
+    while (true) {
+      if (isBadVersion(mid)) {
+        let counter = 0;
+        while (isBadVersion(mid)) {
+          if (isBadVersion(mid - counter)) {
+            counter++;
+          } else {
+            return mid - counter + 1;
+          }
+        }
+      } else {
+        mid += Math.floor((n - mid) / 2);
       }
     }
   };
