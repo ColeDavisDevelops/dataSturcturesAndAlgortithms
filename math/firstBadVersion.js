@@ -36,3 +36,4 @@ var solution = function (isBadVersion) {
     }
   };
 };
+// test
